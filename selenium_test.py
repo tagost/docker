@@ -10,7 +10,7 @@ class prueba_selenium(unittest.TestCase):
     def setUp(self):        
         print("me ejecuto antes de cada test")
         #self.driver = webdriver.Chrome()
-        self.driver = webdriver.Remote(command_executor="http://localhost:4444/wd/hub",
+        self.driver = webdriver.Remote(command_executor="http://selenoid:4444/wd/hub",
                            desired_capabilities={'browserName': 'chrome', 'browserVersion':'89.0', 'selenoid:options':{'enableVNC':True}})
         
     def test_a(self):        
