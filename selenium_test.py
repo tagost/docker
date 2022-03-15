@@ -20,8 +20,8 @@ class prueba_selenium(unittest.TestCase):
         self.driver.get("https://www.google.com")
         time.sleep(5)
         #aceptamos cookies
-        self.driver.find_element(By.XPATH, "//div[text()='Acept']/ancestor::button").click()
-        time.sleep(5)
+        #self.driver.find_element(By.XPATH, "//div[text()='Acept']/ancestor::button").click()
+        #time.sleep(5)
         #buscamos texto wikipedia                
         search_bar = self.driver.find_element(By.NAME, "q")
         time.sleep(5)
