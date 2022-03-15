@@ -35,7 +35,7 @@ class prueba_selenium(unittest.TestCase):
         #WIKIPEDIA
         title = self.driver.title
         
-        self.assertEqual("Wikipedia la enciclopedia libre", title)
+        self.assertEqual("Wikipedia, la enciclopedia libre", title)
         pass
         
     def tearDown(self):
